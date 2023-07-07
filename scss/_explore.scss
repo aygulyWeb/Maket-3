@@ -1,0 +1,58 @@
+@import "_variables";
+@import "_mixins";
+@import "_extends";
+@import "_fonts";
+@import "explore-media";
+
+.explore-block {
+	padding-top: 154px;
+	padding-bottom: 154px;
+	margin-top: 125px;
+	background-color: $exploreBgcolor;
+	position: relative;
+
+	.container {
+		max-width: 1170px;
+		margin: 0 auto;
+	}
+	.explore {
+		max-width: 1170px;
+		margin: 0 auto;
+
+		img {
+			max-width: 100%;
+			background-color: #fff;
+			padding: 3px;
+		}
+
+		.explore__text {
+			width: 523px;
+			height: 420px;
+			position: absolute;
+			top: 250px;
+			left: 800px;
+			// padding: 20px;
+			background-color: #fff;
+
+			.explore__title {
+				font-size: 60px;
+				// text-align: center;
+				text-transform: capitalize;
+				color: $blockTitlecolor;
+				padding-top: 53px;
+				padding-left: 50px;
+				padding-right: 50px;
+			}
+			.explore__subtitle {
+				// padding: 25px;
+				color: $exploreSubtitlecolor;
+				font-size: 16px;
+				text-align: justify;
+				line-height: 1.5;
+				padding-top: 35px;
+				padding-left: 50px;
+				padding-right: 50px;
+			}
+		}
+	}
+}

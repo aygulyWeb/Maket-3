@@ -1,0 +1,38 @@
+@import "_header";
+@import "_hero-area";
+@import "_our-rooms";
+@import "_explore";
+@import "_services";
+@import "find-best";
+@import "_testimonials";
+@import "_video";
+@import "_news";
+@import "_footer";
+
+@import "header-media";
+@import "hero-area-media";
+@import "our-room-media";
+@import "explore-media";
+@import "services-media";
+@import "find-best-media";
+@import "testimonials-media";
+@import "video-media";
+@import "news-media";
+@import "footer-media";
+
+@import "_variables";
+@import "_mixins";
+@import "_extends";
+@import "_fonts";
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+li {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+}

@@ -1,0 +1,66 @@
+@import "_variables";
+@import "_mixins";
+@import "_extends";
+@import "_fonts";
+@import "testimonials-media";
+
+.testimonials {
+	max-width: 1170px;
+	margin: 0 auto;
+	margin-top: 123px;
+
+	.testimonials__title {
+		font-size: 50px;
+		text-align: center;
+		text-transform: capitalize;
+		color: $blockTitlecolor;
+	}
+
+	.testimonials__sliders {
+		padding-top: 100px;
+		padding-left: 201px;
+		padding-right: 201px;
+
+		display: flex;
+		flex-direction: column;
+
+		.slider__block {
+			padding-top: 45px;
+			padding-left: 36px;
+			padding-right: 36px;
+			display: flex;
+			justify-content: center;
+
+			img {
+				padding-top: 20px;
+			}
+			.slider__text {
+				padding: 45px;
+				text-align: justify;
+				font-size: 18px;
+				line-height: 2;
+				background-color: #fff;
+				box-shadow: 0px 0px 10px 10px #f3f6f9;
+				font-family: $sliderTextfont;
+				color: $sliderTextcolor;
+			}
+
+			.slider__subtitles {
+				padding-top: 40px;
+				padding-left: 20px;
+				.subtitle {
+					padding-top: 5px;
+					color: $sliderTextcolor;
+					text-transform: capitalize;
+					font-family: $servicestitleFont;
+					font-size: 36px;
+
+					&:nth-of-type(2) {
+						text-align: center;
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,56 @@
+@import "_variables";
+@import "_mixins";
+@import "_extends";
+@import "_fonts";
+@import "find-best-media";
+
+.find-best {
+	padding-top: 144px;
+	display: flex;
+
+	color: $findbestTextcolor;
+	.find-best__picture {
+		width: 55%;
+	}
+	.find-best__texts {
+		width: 45%;
+
+		background-color: $findbestBgcolor;
+		padding-left: 95px;
+		padding-right: 95px;
+		.find-best__title {
+			text-transform: capitalize;
+			text-align: left;
+			font-family: $findbesttitleFont;
+			font-size: 80px;
+			padding-top: 118px;
+		}
+
+		.find-best__text {
+			padding-top: 65px;
+			font-size: 18px;
+			line-height: 2;
+		}
+
+		.find-best__textnew {
+			line-height: 2;
+			padding-top: 50px;
+			font-size: 18px;
+		}
+
+		a {
+			display: block;
+			text-align: center;
+		}
+		.find-best__button {
+			margin-top: 52px;
+			max-width: 240px;
+			min-height: 50px;
+			text-transform: capitalize;
+			background-color: #fff;
+			color: $findbestBtncolor;
+			padding: 20px;
+			font-size: 24px;
+		}
+	}
+}

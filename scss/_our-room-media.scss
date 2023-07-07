@@ -1,0 +1,107 @@
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	.our-rooms {
+		margin: 0;
+
+		padding-top: 40px;
+
+		.our-rooms__title {
+			padding-top: 0;
+			font-size: 25px;
+		}
+
+		.our-rooms__slider-wrap {
+			padding-top: 40px;
+			padding-left: 5px;
+			padding-right: 5px;
+			.sliders {
+				display: block;
+			}
+
+			.sliders-for-desctop {
+				display: none;
+			}
+
+			.sliders__item {
+				position: relative;
+				text-transform: uppercase;
+				padding: 8px;
+				cursor: pointer;
+
+				a {
+					display: block;
+					background-color: $ourroomButtoncolor;
+					color: $ourroomBtntitleColor;
+					font-family: $ourroomFont;
+					font-size: 16px;
+					padding: 10px;
+					position: absolute;
+					top: 52%;
+					left: 7%;
+				}
+
+				span {
+					color: $ourroomBtntitleColor;
+					font-family: $ourroomFont;
+					font-size: 16px;
+					text-align: center;
+					position: absolute;
+					top: 80%;
+					left: 10%;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.our-rooms {
+		padding-top: 30px;
+
+		.our-rooms__title {
+			padding-top: 50px;
+			font-size: 25px;
+		}
+
+		.our-rooms__slider-wrap {
+			padding-top: 85px;
+			padding-left: 10px;
+			padding-right: 10px;
+			.sliders {
+				display: block;
+			}
+
+			.sliders-for-desctop {
+				display: none;
+			}
+
+			.sliders__item {
+				position: relative;
+				text-transform: uppercase;
+				padding: 8px;
+				cursor: pointer;
+
+				a {
+					display: block;
+					background-color: $ourroomButtoncolor;
+					color: $ourroomBtntitleColor;
+					font-family: $ourroomFont;
+					font-size: 24px;
+					padding: 10px;
+					position: absolute;
+					top: 65%;
+					left: 7%;
+				}
+
+				span {
+					color: $ourroomBtntitleColor;
+					font-family: $ourroomFont;
+					font-size: 20px;
+					text-align: center;
+					position: absolute;
+					top: 80%;
+					left: 10%;
+				}
+			}
+		}
+	}
+}

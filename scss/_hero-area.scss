@@ -1,0 +1,161 @@
+@import "_variables";
+@import "_mixins";
+@import "_extends";
+@import "_fonts";
+@import "hero-area-media";
+
+.hero-area {
+	@include blockFlex(flex, flex-end);
+
+	.hero-area__list-block {
+		width: 5%;
+		@include blockPosition(absolute, 369px, 20px);
+
+		.icon__list {
+			padding-top: 18px;
+
+			.fa-facebook-f,
+			.fa-twitter,
+			.fa-linkedin-in,
+			.fa-instagram {
+				font-size: 20px;
+				color: #999999;
+			}
+
+			.fa-facebook-f:hover {
+				color: #3b5999;
+			}
+
+			.fa-twitter:hover {
+				color: #55acee;
+			}
+
+			.fa-linkedin-in:hover {
+				color: #0077b5;
+			}
+
+			.fa-instagram:hover {
+				color: #e4405f;
+			}
+		}
+	}
+
+	.hero-area__content-block {
+		width: 95%;
+		position: relative;
+		background: url(..//images/background-image.png) center/cover no-repeat;
+		padding-bottom: 60px;
+		@include blockFlexdirect(flex, column, center);
+
+		.hero-area__title {
+			@include blockPaddings(60px, 0, 120px, 120px);
+			@include blockFonts(81px, $heroAreatitleFont, $heroAreatitleColor, capitalize);
+			text-align: center;
+		}
+
+		.hero-area__button {
+			margin-top: 50px;
+			border-radius: 50px;
+			background-color: #fff;
+			@extend %blockTexts;
+
+			a {
+				color: $heroAreaexploreColor;
+				font-family: $heroAreaexploreFont;
+				padding: 20px 35px;
+				display: block;
+				font-size: 18px;
+			}
+		}
+
+		.hero-area__check-block {
+			display: flex;
+			@extend %blockTexts;
+			font-size: 18px;
+			padding-top: 50px;
+
+			.hero-area__check-item {
+				background-color: #fff;
+				color: $heroAreanumbersColor;
+				position: relative;
+				@include blockPaddings(25px, 30px, 68px, 0);
+
+				&:nth-of-type(2) {
+					padding-left: 80px;
+				}
+				&:nth-of-type(3) {
+					padding-left: 90px;
+					padding-right: 123px;
+				}
+
+				.check__in {
+					font-family: $heroAreaexploreFont;
+					padding-top: 8px;
+					font-size: 16px;
+				}
+				.check__number {
+					font-family: $heroAreatitleFont;
+					font-size: 89px;
+					padding-top: 20px;
+				}
+				.check__date {
+					padding-top: 20px;
+
+					.toggle {
+						position: relative;
+						cursor: pointer;
+
+						span {
+							font-size: 24px;
+						}
+						.fa-sort-down {
+							@include blockPosition(absolute, -5px, 55px);
+						}
+					}
+				}
+
+				.form__selected {
+					@include blockPosition(absolute, 220px, 85px);
+
+					width: inherit;
+					height: auto;
+					text-align: center;
+					background-color: #fff;
+					padding: 10px;
+
+					.form__item {
+						font-family: $heroAreatitleFont;
+						border-bottom: 1px solid;
+					}
+
+					li {
+						padding-top: 10px;
+					}
+				}
+			}
+			#hover:checked ~ .form__selected {
+				display: block;
+			}
+			#hover2:checked ~ .form__selected {
+				display: block;
+			}
+			#hover3:checked ~ .form__selected {
+				display: block;
+			}
+
+			.check__title {
+				display: block;
+				width: 270px;
+				@include blockPaddings(80px, 0, 10px, 10px);
+				@include blockFonts(30px, $heroAreatitleFont, $heroAreacheckTitleolor, uppercase);
+				letter-spacing: 3px;
+				background-color: $heroAreacheckColor;
+			}
+		}
+	}
+
+	input,
+	.form__selected {
+		display: none;
+	}
+}

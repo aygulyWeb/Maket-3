@@ -1,0 +1,168 @@
+@import "_variables";
+@import "_mixins";
+@import "_extends";
+@import "_fonts";
+@import "footer-media";
+
+.footer {
+	margin-top: 80px;
+	padding-top: 110px;
+
+	background-color: $footerBgcolor;
+
+	.container {
+		max-width: 1170px;
+		margin: 0 auto;
+	}
+
+	.footer__block {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.footer__air-title {
+		width: 400px;
+		.air__title {
+			color: $headerTitlecolor;
+			font-family: $headerTitlefont;
+			font-size: 48px;
+			text-transform: capitalize;
+		}
+
+		.air__text {
+			padding-top: 40px;
+
+			font-size: 16px;
+			color: $footerTextcolor;
+		}
+		.adress {
+			padding-top: 40px;
+			padding-left: 35px;
+
+			padding-bottom: 30px;
+			line-height: 25px;
+			font-size: 16px;
+			text-transform: capitalize;
+			color: $footerTextcolor;
+			position: relative;
+
+			&:before {
+				display: block;
+				content: "\f3c5";
+				font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+				font-weight: 900;
+				font-size: 30px;
+				color: #999999;
+				cursor: pointer;
+				position: absolute;
+				top: 45px;
+				left: 5px;
+			}
+		}
+		.telephone {
+			padding-left: 40px;
+			font-size: 16px;
+			color: $footerTextcolor;
+			position: relative;
+			&:before {
+				display: block;
+				content: "\f879";
+				font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+				font-weight: 900;
+				font-size: 30px;
+				color: #999999;
+				cursor: pointer;
+				position: absolute;
+				top: 5px;
+				left: 5px;
+				transform: rotate(15deg);
+			}
+		}
+
+		.telephone2 {
+			display: block;
+			padding-top: 5px;
+			padding-left: 40px;
+
+			font-size: 16px;
+			line-height: 10px;
+			color: $footerTextcolor;
+		}
+	}
+
+	.footer__quick-title {
+		.quick__title {
+			color: #fff;
+			text-transform: capitalize;
+
+			font-family: $footerTitleFont;
+			font-size: 24px;
+		}
+
+		.quick__list-block {
+			padding-top: 40px;
+
+			color: $footerTextcolor;
+			display: flex;
+			justify-content: space-between;
+
+			.quick__list {
+				padding-top: 15px;
+				padding-right: 35px;
+				font-size: 16px;
+			}
+		}
+	}
+
+	.footer__social-icons {
+		.social__title {
+			text-transform: capitalize;
+
+			color: $footerTextcolor;
+			font-family: $footerTitleFont;
+			font-size: 24px;
+		}
+
+		.social__icons-block {
+			padding-top: 40px;
+			.social__icons {
+				display: inline;
+				padding-right: 20px;
+			}
+			i {
+				font-size: 16px;
+				color: $footerTextcolor;
+			}
+			.fa-facebook-f:hover {
+				color: #3b5999;
+			}
+
+			.fa-twitter:hover {
+				color: #55acee;
+			}
+
+			.fa-linkedin-in:hover {
+				color: #0077b5;
+			}
+			.fa-youtube:hover {
+				color: #c4302b;
+			}
+
+			.fa-instagram:hover {
+				color: #e4405f;
+			}
+		}
+	}
+
+	.footer__copr {
+		padding-top: 60px;
+		padding-bottom: 20px;
+
+		.copr {
+			text-align: center;
+			color: $footerTextcolor;
+			font-size: 16px;
+			font-family: $footerTitleFont;
+		}
+	}
+}

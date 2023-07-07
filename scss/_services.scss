@@ -1,0 +1,44 @@
+@import "_variables";
+@import "_mixins";
+@import "_extends";
+@import "_fonts";
+@import "services-media";
+
+.services {
+	padding-top: 100px;
+	.container {
+		max-width: 1170px;
+		margin: 0 auto;
+	}
+
+	.services__title {
+		text-align: center;
+		text-transform: capitalize;
+		color: $blockTitlecolor;
+		font-size: 50px;
+	}
+
+	.services__items {
+		display: flex;
+		text-align: center;
+		padding-top: 120px;
+
+		.services__icons {
+			.icon__title {
+				padding-top: 30px;
+
+				font-family: $servicestitleFont;
+				color: $blockTitlecolor;
+				font-size: 35px;
+				text-transform: capitalize;
+			}
+			.icon__subtitle {
+				padding-top: 25px;
+				color: $servicestextcolor;
+				font-size: 20px;
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+		}
+	}
+}

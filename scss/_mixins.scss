@@ -1,0 +1,28 @@
+@mixin blockFonts($fontSize, $fontFamily: serif, $fontColor, $textTransform) {
+	font-size: $fontSize;
+	font-family: $fontFamily;
+	color: $fontColor;
+	text-transform: $textTransform;
+}
+
+@mixin blockPaddings($top, $bottom, $left, $right) {
+	padding-top: $top;
+	padding-bottom: $bottom;
+	padding-left: $left;
+	padding-right: $right;
+}
+
+@mixin blockFlex($flex: flex, $justify) {
+	display: $flex;
+	justify-content: $justify;
+}
+@mixin blockFlexdirect($flex: flex, $direct, $align) {
+	display: $flex;
+	flex-direction: $direct;
+	align-items: $align;
+}
+@mixin blockPosition($position, $top, $left) {
+	position: $position;
+	top: $top;
+	left: $left;
+}

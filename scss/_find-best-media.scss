@@ -1,0 +1,86 @@
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	.find-best {
+		padding-top: 144px;
+
+		color: $findbestTextcolor;
+		.find-best__picture {
+			display: none;
+		}
+		.find-best__texts {
+			width: 100%;
+			padding: 0;
+			margin: 0;
+			.find-best__title {
+				font-size: 30px;
+				text-align: center;
+				padding-top: 25px;
+			}
+
+			.find-best__text {
+				padding: 25px;
+				font-size: 18px;
+				line-height: 1.5;
+			}
+
+			.find-best__textnew {
+				line-height: 1.5;
+				padding: 25px;
+				font-size: 18px;
+				padding-top: 0;
+			}
+
+			.find-best__button {
+				margin-top: 20px;
+				margin-left: 80px;
+				margin-bottom: 50px;
+				max-width: 150px;
+				height: 0px;
+				padding-top: 10px;
+				font-size: 22px;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.find-best {
+		padding-top: 60px;
+
+		color: $findbestTextcolor;
+		.find-best__picture {
+			display: none;
+		}
+		.find-best__texts {
+			width: 100%;
+			padding: 0;
+			margin: 0;
+			.find-best__title {
+				font-size: 50px;
+				text-align: center;
+				margin-top: 0px;
+				padding-top: 40px;
+			}
+
+			.find-best__text {
+				padding: 40px;
+				font-size: 25px;
+				line-height: 1.5;
+			}
+
+			.find-best__textnew {
+				line-height: 1.5;
+				padding: 40px;
+				font-size: 25px;
+				padding-top: 0;
+			}
+
+			.find-best__button {
+				margin-top: 0px;
+				margin-left: 240px;
+				padding: 25px;
+				font-size: 40px;
+				margin-bottom: 50px;
+			}
+		}
+	}
+}

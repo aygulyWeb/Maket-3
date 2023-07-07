@@ -1,0 +1,140 @@
+@import "_variables";
+@import "_mixins";
+@import "_extends";
+@import "_fonts";
+@import "_header-media";
+
+.header {
+	@include blockFlex(flex, space-between);
+	@include blockPaddings(30px, 30px, 50px, 28px);
+
+	position: relative;
+
+	.header__burger {
+		i {
+			margin-top: 5px;
+			font-size: 30px;
+		}
+		#burger:checked ~ .burger__content {
+			transform: translateX(0%);
+		}
+
+		input {
+			display: none;
+		}
+
+		.burger__toggle {
+			cursor: pointer;
+
+			&:hover {
+				color: rgba(232, 232, 232, 1);
+			}
+		}
+
+		.burger__content {
+			@include blockPaddings(0, 10px, 60px, 60px);
+			@include blockPosition(fixed, 0, 0);
+			text-align: center;
+
+			padding-top: 40px;
+			background-color: #000;
+			width: 40%;
+			color: #fff;
+			z-index: 1;
+			transition: 0.5s linear;
+			transform: translateX(-100%);
+
+			.burger2__toggle {
+				@include blockFlex(flex, flex-end);
+				@include blockPosition(absolute, 40px, 90%);
+				cursor: pointer;
+
+				&:hover {
+					color: rgba(232, 232, 232, 0.5);
+				}
+			}
+			.burger__list {
+				padding-top: 25px;
+				line-height: 55px;
+				@include blockFonts(25px, $burgerTextfont, #ccc, capitalize);
+				cursor: pointer;
+
+				&:hover {
+					color: rgba(232, 232, 232, 0.5);
+				}
+			}
+
+			.social__icons {
+				@include blockFlex(flex, space-around);
+
+				line-height: 65px;
+				padding-top: 20px;
+
+				.fa-facebook-f,
+				.fa-twitter,
+				.fa-linkedin-in,
+				.fa-instagram {
+					color: #999999;
+				}
+
+				.fa-facebook-f:hover {
+					color: #3b5999;
+				}
+
+				.fa-twitter:hover {
+					color: #55acee;
+				}
+
+				.fa-linkedin-in:hover {
+					color: #0077b5;
+				}
+
+				.fa-instagram:hover {
+					color: #e4405f;
+				}
+			}
+		}
+	}
+
+	.header__title {
+		@include blockFonts(60px, $headerTitlefont, $headerTitlecolor, capitalize);
+	}
+
+	.header__search {
+		position: relative;
+		.search__input {
+			display: none;
+		}
+
+		img {
+			width: 50px;
+			padding-top: 10px;
+		}
+
+		.search__toggle {
+			cursor: pointer;
+		}
+
+		.submit__input {
+			position: absolute;
+			top: 15px;
+			right: 65px;
+			border-radius: 10px;
+			border-color: #ccc;
+			padding: 8px;
+			outline: none;
+			text-decoration: none;
+			transition: 0.4s ease;
+			width: 0px;
+			visibility: hidden;
+			opacity: 0;
+			transform-origin: right;
+		}
+
+		.search__input:checked ~ .submit__input {
+			width: 250px;
+			opacity: 10;
+			visibility: visible;
+		}
+	}
+}
